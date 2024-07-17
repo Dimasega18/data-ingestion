@@ -2,6 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python
 
 ### Python ###
+taxi.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
