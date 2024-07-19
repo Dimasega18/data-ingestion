@@ -9,4 +9,4 @@ ENV user=default_value
 RUN mkdir app
 COPY data.ipynb /app
 WORKDIR /app
-CMD python data.ipynb -pth ${path} -p ${port} -pass ${pass} -db ${db} -u ${user}
+CMD ["sh","-c","python data.ipynb -pth ${path} -p ${port} -pass ${pass} -db ${db} -u ${user}"]
