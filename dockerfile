@@ -1,13 +1,12 @@
 from python:latest
 
-ARG path=..\yellow_tripdata_2024-01.parquet
-ARG
-ARG
-ARG
-ARG
+ENV path=default_value
+ENV port=default_value
+ENV pass=default_value
+ENV db=default_value
+ENV user=default_value
 
-RUN mkdir /app
-COPY data.ipynb /app/data.ipynb
-COPY 
-workdir /app
-CMD python data.ipynb -pth ${path} -p 
+RUN mkdir app
+COPY data.ipynb /app
+WORKDIR /app
+CMD python data.ipynb -pth ${path} -p ${port} -pass ${pass} -db ${db} -u ${user}
