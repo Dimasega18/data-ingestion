@@ -1,1 +1,1 @@
-DATA INGESTION PERTAMA SAYA
+Data ingestion Use Python
